@@ -18,6 +18,7 @@ spec:
       containers:
       - name: bankapp
         image: shubhambs11/ai-bank-app:k8s
+        imagePullPolicy: IfNotPresent
         ports:
         - containerPort: 8080
         envFrom:
